@@ -7,7 +7,7 @@ define('THEME_VERSION', wp_get_theme()->get('Version'));
 /*Theme setting */
 
 add_action('after_setup_theme', 'psy_setup');
-function theme_setup()
+function psy_setup()
 {
 
     add_theme_support('title-tag'); //динамічні заголовки вкладки
