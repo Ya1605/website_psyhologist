@@ -40,7 +40,7 @@ function theme_setup()
  * connect script and style
  */
 
-require_once get_template_directory() . 'inc/connect-script-and-style.php'
+require_once get_template_directory() . '/inc/connect-script-and-style.php'
 
 
 ?>
