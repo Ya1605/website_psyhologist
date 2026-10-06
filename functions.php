@@ -7,7 +7,7 @@ define('THEME_VERSION', wp_get_theme()->get('Version'));
 /*Theme setting */
 
 add_action('after_setup_theme', 'psy_setup');
-function theme_setup()
+function psy_setup()
 {
 
     add_theme_support('title-tag'); //динамічні заголовки вкладки
@@ -40,7 +40,7 @@ function theme_setup()
  * connect script and style
  */
 
-require_once get_template_directory() . 'inc/connect-script-and-style.php'
+require_once get_template_directory() . '/inc/connect-script-and-style.php';
 
 
 ?>
