@@ -55,7 +55,5 @@ $phone_link    = '+380505773119';
 
         </div>
 
-
-
-
     </header>
+    <main id="content">
