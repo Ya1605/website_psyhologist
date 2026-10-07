@@ -144,6 +144,24 @@ button:focus-visible {
 .is-open .header__burger span:nth-child(2) { opacity: 0; }
 .is-open .header__burger span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
 
+
+/* hero section*/
+
+
+.hero{
+    position: relative;
+    overflow: hidden;
+    background: #92C8DB;
+}
+
+
+
+
+
+
+
+
+
 /* мобільна версія */
 @media (max-width: 900px) {
     :root { --header-h: 76px; }
