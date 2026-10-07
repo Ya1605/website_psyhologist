@@ -1,7 +1,7 @@
 <?php
 get_header();
 ?>
-main page
+<?php get_template_part('template-parts/hero'); ?>
 
 <?php get_footer();
 ?>
