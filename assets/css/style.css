@@ -150,9 +150,21 @@ button:focus-visible {
 
 .hero{
     position: relative;
-    overflow: hidden;
+    overflow: hidden;         /* обрізає повернуті блоки */
+    isolation: isolate;    /* щоб z-index: -1 лишався всередині секції */
     background: #92C8DB;
 }
+
+.hero::before{
+    position: absolute;
+    left: -10%;
+    right: -10%;
+    top: -50%;
+    height: 120%;
+    transform: rotate(-12deg);   /* 11.97° з Figma */
+}
+
+
 
 
 
