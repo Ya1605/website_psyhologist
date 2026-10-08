@@ -244,7 +244,7 @@ button:focus-visible {
     color: #ffffff;
     -webkit-text-stroke: 2px #000;
     paint-order: stroke fill;
-    -webkit-box-decoration-break: clone;
+    
 }
 
 
