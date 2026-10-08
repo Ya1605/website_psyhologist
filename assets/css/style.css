@@ -176,7 +176,7 @@ button:focus-visible {
     z-index: -1;    /* під основним блоком */
 }
 
-.hero__inner{
+.container hero__inner{
 
     position: relative;
     z-index: 1;
