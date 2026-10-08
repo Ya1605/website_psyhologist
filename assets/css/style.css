@@ -152,7 +152,7 @@ button:focus-visible {
     position: relative;
     isolation: isolate;
     overflow: hidden;
-    background: #fff;
+    background: #92C8DB;
 }
 
 /* основний похилий блок */
