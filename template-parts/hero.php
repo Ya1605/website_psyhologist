@@ -4,7 +4,7 @@
         <div class="hero__content">
             <h1 class="hero__title">
                 Відчуйте результат<br>
-                одразу післ <span class="hero__mark">я першої</span> консультації!
+                одразу післ<span class="hero__mark">я першої</span> консультації!
             </h1>
             <a href="#contact" class="hero__btn">Записатись</a>
         </div>
