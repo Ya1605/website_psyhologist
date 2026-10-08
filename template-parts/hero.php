@@ -1,4 +1,6 @@
 <section class="hero" id="hero">
+    <span class="hero__line hero__line--1" aria-hidden="true"></span>
+    <span class="hero__line hero__line--2" aria-hidden="true"></span>
     <div class="container hero__inner">
 
         <div class="hero__content">

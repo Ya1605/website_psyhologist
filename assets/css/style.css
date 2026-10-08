@@ -158,33 +158,49 @@ button:focus-visible {
     position: relative;
     isolation: isolate;
     overflow: hidden;
-    background: #fff;   /* білий, а блакитний малює ::before */
+    background: #fff;
 }
 
-/* основний похилий блок */
+/* блакитний фон зі скошеним нижнім краєм */
 .hero::before {
     content: "";
     position: absolute;
-    left: -10%;
-    right: -10%;
-    top: -50%;
-    height: 120%;
-    background: var(--hero-blue);
-    transform: rotate(-12deg);
+    inset: 0;
+    z-index: -1;
+    background: #92c8db;
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% calc(100% - 30px - min(21vw, 420px)),
+        0 calc(100% - 30px)
+    );
 }
 
-/* нижчий темніший шар із тонкою лінією */
-.hero::after {
-    content: "";
+/* дві тонкі лінії паралельно краю */
+.hero__line {
     position: absolute;
-    left: -10%;
-    right: -10%;
-    top: calc(-50% + 40px);
-    height: 120%;
-    background: var(--hero-blue-dark);
-    border-bottom: 1px solid var(--hero-line);
-    transform: rotate(-12deg);
+    inset: 0;
     z-index: -1;
+    background: #7a8a93;
+    pointer-events: none;
+}
+
+.hero__line--1 {
+    clip-path: polygon(
+        0 calc(100% - 20px),
+        100% calc(100% - 20px - min(21vw, 420px)),
+        100% calc(100% - 19px - min(21vw, 420px)),
+        0 calc(100% - 19px)
+    );
+}
+
+.hero__line--2 {
+    clip-path: polygon(
+        0 calc(100% - 10px),
+        100% calc(100% - 10px - min(21vw, 420px)),
+        100% calc(100% - 9px - min(21vw, 420px)),
+        0 calc(100% - 9px)
+    );
 }
 
 .hero__inner {
