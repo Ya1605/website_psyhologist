@@ -155,8 +155,10 @@ button:focus-visible {
     --hero-btn: #ffc878;
 }
 .hero {
-    --skew: min(21vw, 420px);   /* висота скосу: більше число означає крутіший нахил */
-    --gap: 28px;                /* відстань між смужками */
+    --skew: min(21vw, 420px);   /* нахил: більше число означає крутіший */
+    --base: 40px;               /* висота від низу секції до нижнього краю блакитного */
+    --gap: 14px;                /* відстань між лініями */
+    --w: 1px;                   /* товщина лінії */
 
     position: relative;
     isolation: isolate;
@@ -164,48 +166,47 @@ button:focus-visible {
     background: #fff;
 }
 
-/* спільне для всіх трьох шарів */
-.hero::before,
-.hero__line {
+/* блакитний фон: нижній скошений край */
+.hero::before {
     content: "";
     position: absolute;
     inset: 0;
-    pointer-events: none;
-}
-
-/* верхній блакитний шар (перекриває решту) */
-.hero::before {
-    z-index: -1;
+    z-index: -2;
     background: #92c8db;
     clip-path: polygon(
         0 0,
         100% 0,
-        100% calc(100% - var(--gap) * 2 - var(--skew)),
-        0 calc(100% - var(--gap) * 2)
+        100% calc(100% - var(--base) - var(--skew)),
+        0 calc(100% - var(--base))
     );
 }
 
-/* середній шар */
+/* лінії лежать на блакитному, паралельно краю */
+.hero__line {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: #7a8a93;
+    pointer-events: none;
+}
+
+/* лінія 1: на --gap вище краю */
 .hero__line--1 {
-    z-index: -2;
-    background: #7fb1c2;
     clip-path: polygon(
-        0 0,
-        100% 0,
-        100% calc(100% - var(--gap) - var(--skew)),
-        0 calc(100% - var(--gap))
+        0 calc(100% - var(--base) - var(--gap)),
+        100% calc(100% - var(--base) - var(--skew) - var(--gap)),
+        100% calc(100% - var(--base) - var(--skew) - var(--gap) + var(--w)),
+        0 calc(100% - var(--base) - var(--gap) + var(--w))
     );
 }
 
-/* нижній шар */
+/* лінія 2: на --gap * 2 вище краю */
 .hero__line--2 {
-    z-index: -3;
-    background: #6f9aab;
     clip-path: polygon(
-        0 0,
-        100% 0,
-        100% calc(100% - var(--skew)),
-        0 100%
+        0 calc(100% - var(--base) - var(--gap) * 2),
+        100% calc(100% - var(--base) - var(--skew) - var(--gap) * 2),
+        100% calc(100% - var(--base) - var(--skew) - var(--gap) * 2 + var(--w)),
+        0 calc(100% - var(--base) - var(--gap) * 2 + var(--w))
     );
 }
 
