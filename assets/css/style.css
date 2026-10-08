@@ -233,7 +233,7 @@ button:focus-visible {
 }
 
 .hero__title {
-    color: #fff;
+    color: #000000;
     -webkit-text-stroke: 2px #000;
     paint-order: stroke fill;
 }
@@ -241,7 +241,9 @@ button:focus-visible {
 .hero__mark {
     background: #ffd98a;
     padding: 0 6px;
-    box-decoration-break: clone;
+    color: #ffffff;
+    -webkit-text-stroke: 2px #000;
+    paint-order: stroke fill;
     -webkit-box-decoration-break: clone;
 }
 
