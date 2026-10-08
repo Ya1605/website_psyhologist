@@ -148,36 +148,40 @@ button:focus-visible {
 /* hero section*/
 
 
-.hero{
+.hero {
     position: relative;
-    overflow: hidden;         /* обрізає повернуті блоки */
-    isolation: isolate;    /* щоб z-index: -1 лишався всередині секції */
-    background: #92C8DB;
+    isolation: isolate;
+    overflow: hidden;
+    background: #fff;
 }
 
-.hero::before{
+/* основний похилий блок */
+.hero::before {
+    content: "";
     position: absolute;
     left: -10%;
     right: -10%;
     top: -50%;
     height: 120%;
-    transform: rotate(-12deg);   /* 11.97° з Figma */
+    background: var(--hero-blue);
+    transform: rotate(-12deg);
 }
-/* нижчий, темніший шар із тонкою лінією */
-.hero::after{
 
+/* нижчий темніший шар із тонкою лінією */
+.hero::after {
+    content: "";
     position: absolute;
-    left:-10%;
+    left: -10%;
     right: -10%;
-    top: calc(-50% +40px);
+    top: calc(-50% + 40px);
     height: 120%;
+    background: var(--hero-blue-dark);
     border-bottom: 1px solid var(--hero-line);
     transform: rotate(-12deg);
-    z-index: -1;    /* під основним блоком */
+    z-index: -1;
 }
 
-.container hero__inner{
-
+.hero__inner {
     position: relative;
     z-index: 1;
     display: flex;
@@ -187,30 +191,27 @@ button:focus-visible {
     min-height: 640px;
     padding-top: 40px;
     padding-bottom: 80px;
-
 }
 
-.hero__content{
-    flex:0 1 560px;
-
+.hero__content {
+    flex: 0 1 560px;
 }
 
-.hero__title{
+.hero__title {
     margin: 0 0 40px;
     font-size: clamp(24px, 3vw, 40px);
     line-height: 1.5;
     font-weight: 700;
-    color: #fff;
+    color: #000;
 }
 
 /* жовте виділення */
-.hero__mark{
+.hero__mark {
     padding: 0 6px;
     background: var(--hero-yellow);
     border-radius: 2px;
     box-decoration-break: clone;
-     -webkit-box-decoration-break: clone;
-
+    -webkit-box-decoration-break: clone;
 }
 
 
