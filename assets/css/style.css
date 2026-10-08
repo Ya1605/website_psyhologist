@@ -185,11 +185,17 @@ button:focus-visible {
 .hero__line {
     position: absolute;
     inset: 0;
-    z-index: -1;
     background: #7a8a93;
     pointer-events: none;
 }
-
+ 
+.hero__lines {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.25));
+}
 /* лінія 1: на --gap вище краю */
 .hero__line--1 {
     clip-path: polygon(
