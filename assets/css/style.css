@@ -155,51 +155,57 @@ button:focus-visible {
     --hero-btn: #ffc878;
 }
 .hero {
+    --skew: min(21vw, 420px);   /* висота скосу: більше число означає крутіший нахил */
+    --gap: 28px;                /* відстань між смужками */
+
     position: relative;
     isolation: isolate;
     overflow: hidden;
     background: #fff;
 }
 
-/* блакитний фон зі скошеним нижнім краєм */
-.hero::before {
+/* спільне для всіх трьох шарів */
+.hero::before,
+.hero__line {
     content: "";
     position: absolute;
     inset: 0;
+    pointer-events: none;
+}
+
+/* верхній блакитний шар (перекриває решту) */
+.hero::before {
     z-index: -1;
     background: #92c8db;
     clip-path: polygon(
         0 0,
         100% 0,
-        100% calc(100% - 30px - min(21vw, 420px)),
-        0 calc(100% - 30px)
+        100% calc(100% - var(--gap) * 2 - var(--skew)),
+        0 calc(100% - var(--gap) * 2)
     );
 }
 
-/* дві тонкі лінії паралельно краю */
-.hero__line {
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-    background: #7a8a93;
-    pointer-events: none;
-}
-
+/* середній шар */
 .hero__line--1 {
+    z-index: -2;
+    background: #7fb1c2;
     clip-path: polygon(
-        0 calc(100% - 20px),
-        100% calc(100% - 20px - min(21vw, 420px)),
-        100% calc(100% - 19px - min(21vw, 420px)),
-        0 calc(100% - 19px)
+        0 0,
+        100% 0,
+        100% calc(100% - var(--gap) - var(--skew)),
+        0 calc(100% - var(--gap))
     );
 }
 
+/* нижній шар */
 .hero__line--2 {
+    z-index: -3;
+    background: #6f9aab;
     clip-path: polygon(
-        0 calc(100% - 10px),
-        100% calc(100% - 10px - min(21vw, 420px)),
-        100% calc(100% - 9px - min(21vw, 420px)),
-        0 calc(100% - 9px)
+        0 0,
+        100% 0,
+        100% calc(100% - var(--skew)),
+        0 100%
     );
 }
 
