@@ -163,6 +163,56 @@ button:focus-visible {
     height: 120%;
     transform: rotate(-12deg);   /* 11.97° з Figma */
 }
+/* нижчий, темніший шар із тонкою лінією */
+.hero::after{
+
+    position: absolute;
+    left:-10%;
+    right: -10%;
+    top: calc(-50% +40px);
+    height: 120%;
+    border-bottom: 1px solid var(--hero-line);
+    transform: rotate(-12deg);
+    z-index: -1;    /* під основним блоком */
+}
+
+.hero__inner{
+
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    min-height: 640px;
+    padding-top: a40px;
+    padding-bottom: 80px;
+
+}
+
+.hero__contebt{
+    flex:0 1 560px;
+
+}
+
+.hero__title{
+    margin: 0 0 40px;
+    font-size: clamp(24px, 3vw, 40px);
+    line-height: 1.5;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* жовте виділення */
+.hero__mark{
+    padding: 0 6px;
+    background: var(--hero-yellow);
+    border-radius: 2px;
+    box-decoration-break: clone;
+     -webkit-box-decoration-break: clone;
+
+}
+
 
 
 
