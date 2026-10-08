@@ -147,12 +147,18 @@ button:focus-visible {
 
 /* hero section*/
 
-
+:root {
+    --hero-blue: #92c8db;
+    --hero-blue-dark: #7fb1c2;
+    --hero-line: #7a8a93;
+    --hero-yellow: #ffd98a;
+    --hero-btn: #ffc878;
+}
 .hero {
     position: relative;
     isolation: isolate;
     overflow: hidden;
-    background: #92C8DB;
+    background: #fff;   /* білий, а блакитний малює ::before */
 }
 
 /* основний похилий блок */
