@@ -10,7 +10,7 @@
                 Відчуйте результат<br>
                 одразу післ<span class="hero__mark">я першої</span> консультації!
             </h1>
-            <a href="#contact" class="hero__btn">Записатись</a>
+            <button type="button" class="hero__btn" data-strcoll="#contact">Записатись</button>
         </div>
 
         <div class="hero__photo">

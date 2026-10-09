@@ -248,10 +248,36 @@ button:focus-visible {
 }
 
 
+.hero__btn{
+    display: inline-block;
+    pad: 16px 44px;
+    border: 0;
+    border-radius: 14px;
+    background: #ffc878;
+    color: #000;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow:0 6px 16px rgba(255, 200, 120, 0.45) ;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
 
+.hero__btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(255, 200, 120, 0.55);
+}
 
+.hero__btn:focus-visible {
+    outline: 2px solid #2d7ff9;
+    outline-offset: 3px;
+}
 
-
+@media (max-width: 480px) {
+    .hero__btn {
+        display: block;
+        width: 100%;
+    }
+}
 
 
 
