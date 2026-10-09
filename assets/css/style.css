@@ -77,12 +77,12 @@ button:focus-visible {
 }
 
 .header__name {
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 28px;
+    font-weight: bold;
 }
 
 .header__role {
-    font-size: 13px;
+    font-size: 18px;
 }
 
 /* панель: меню + телефон */
@@ -101,6 +101,8 @@ button:focus-visible {
     margin: 0;
     padding: 0;
     list-style: none;
+    font-size: 21;
+    font-weight: 500;
 }
 
 .header__menu a {
@@ -119,6 +121,8 @@ button:focus-visible {
     color: var(--color-text);
     text-decoration: none;
     white-space: nowrap;
+    font-size: 21;
+    font-weight: bold;
 }
 
 /* бургер (на десктопі прихований) */
