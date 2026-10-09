@@ -159,10 +159,10 @@ button:focus-visible {
     --base: 40px;               /* висота від низу секції до нижнього краю блакитного */
     --gap: 20px;                /* відстань між лініями */
     --w: 2px;                   /* товщина лінії */
-
+     z-index: 1;   
     position: relative;
     isolation: isolate;
-    overflow: hidden;
+    overflow-x: clip;
     background: #fff;
 }
 
@@ -220,12 +220,12 @@ button:focus-visible {
     position: relative;
     z-index: 1;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     gap: 40px;
-    min-height: 640px;
+    min-height: 520px;
     padding-top: 40px;
-    padding-bottom: 80px;
+    padding-bottom: 0px;
 }
 
 .hero__content {
@@ -260,6 +260,7 @@ button:focus-visible {
     cursor: pointer;
     box-shadow:0 6px 16px rgba(255, 200, 120, 0.45) ;
     transition: transform 0.2s, box-shadow 0.2s;
+    font-size: 24px;
 }
 
 .hero__btn:hover {
@@ -271,6 +272,18 @@ button:focus-visible {
     outline: 2px solid #2d7ff9;
     outline-offset: 3px;
 }
+
+.hero__photo {
+    position: relative;
+    flex: 0 0 auto;
+    align-self: flex-end;
+    width: clamp(300px, 36vw, 520px);   /* було 30vw / 420px */
+    aspect-ratio: 1 / 1;
+    margin-bottom: -140px;              /* фото звисає на білий фон */
+}
+
+
+
 
 @media (max-width: 480px) {
     .hero__btn {
