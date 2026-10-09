@@ -237,6 +237,7 @@ button:focus-visible {
     color: #000000;
     -webkit-text-stroke: 1px #000;
     paint-order: stroke fill;
+    line-height: 1.5;
 }
 
 .hero__mark {
