@@ -2,7 +2,7 @@
     --color-text: #111;
     --color-bg: #fff;
     --color-border: #e5e5e5;
-    --container: 1200px;
+    --container: 1600px;
     --header-h: 100px;
 }
 
@@ -17,7 +17,7 @@ section[id] {
 .container {
     max-width: var(--container);
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 40px;
 }
 
 /* доступність */
@@ -60,6 +60,7 @@ button:focus-visible {
     display: flex;
     align-items: center;
     gap: 20px;
+    margin-right: 150px;
 }
 
 .header__brand .custom-logo {
