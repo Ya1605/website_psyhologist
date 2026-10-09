@@ -223,13 +223,14 @@ button:focus-visible {
     align-items: flex-start;
     justify-content: space-between;
     gap: 40px;
-    min-height: 520px;
+    min-height: 620px;
     padding-top: 40px;
     padding-bottom: 0px;
 }
 
 .hero__content {
     flex: 0 1 560px;
+    margin-top: 100px;
 }
 
 .hero__title {
@@ -279,7 +280,7 @@ button:focus-visible {
     align-self: flex-end;
     width: clamp(300px, 36vw, 520px);   /* було 30vw / 420px */
     aspect-ratio: 1 / 1;
-    margin-bottom: -140px;              /* фото звисає на білий фон */
+    margin-bottom: -50px;              /* фото звисає на білий фон */
 }
 
 
