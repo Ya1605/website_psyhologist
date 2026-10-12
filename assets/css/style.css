@@ -294,7 +294,7 @@ button:focus-visible {
 /* help section*/
 
 .help{
-    padding: 0 80px;
+    padding:120px 0 80px;
 }
 
 .help__title{
@@ -314,6 +314,13 @@ border: 1px solid #ffd98a;
 border-radius: 14px;
 overflow: hidden;
 
+}
+.card {
+    display: flex;
+    align-items: stretch;
+    border: 1px solid #ffd98a;
+    border-radius: 14px;
+    overflow: hidden;
 }
 
 .card:nth-child(even){
