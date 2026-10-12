@@ -311,8 +311,7 @@ button:focus-visible {
 display: flex;
 flex-direction: column;
 gap: 40px;
-max-width: 900px;
-margin: o auto;
+margin: 0 auto;
 padding: 0;
 list-style: none;
 }
