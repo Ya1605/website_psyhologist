@@ -310,10 +310,11 @@ button:focus-visible {
 .help__list{
 display: flex;
 flex-direction: column;
-border: 1px solid #ffd98a;
-border-radius: 14px;
-overflow: hidden;
-
+gap: 40px;
+max-width: 900px;
+margin: o auto;
+padding: 0;
+list-style: none;
 }
 .card {
     display: flex;
