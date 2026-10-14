@@ -3,8 +3,8 @@
         <span class="services__line services__line--1"></span>
         <span class="services__line services__line--2"></span>
     </div>
-    <div class="container services">
-        <div services photo>
+    <div class="container services__inner">
+        <div class="services__photo">
             <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/img services section.webp'); ?>"
                 alt="Ілона Яковлева, психолог">
         </div>

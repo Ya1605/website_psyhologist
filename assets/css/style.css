@@ -377,8 +377,16 @@ list-style: none;
 .services__lines{
     position: absolute;
     inset: 0;
-    background: #6f9aab;
+     z-index: -1;
+    pointer-events: none;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.25));
     
+}
+
+.services__line{
+    position: absolute;
+    inset: 0;
+    background: #6f9aab;
 }
 /* лінія 1: на 14px вище нижнього краю, товщина 2px */
 .services__line--1 {
@@ -402,7 +410,7 @@ list-style: none;
 
 /* вміст */
 
-.container services{
+.services__inner {
     position: relative;
     display: flex;
     flex-direction: column;
