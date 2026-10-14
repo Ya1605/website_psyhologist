@@ -374,6 +374,47 @@ list-style: none;
     );
 }
 
+.services__lines{
+    position: absolute;
+    inset: 0;
+    background: #6f9aab;
+    
+}
+/* лінія 1: на 14px вище нижнього краю, товщина 2px */
+.services__line--1 {
+    clip-path: polygon(
+        0 calc(100% - min(10vw, 140px) - 14px),
+        100% calc(100% - 14px),
+        100% calc(100% - 12px),
+        0 calc(100% - min(10vw, 140px) - 12px)
+    );
+}
+
+/* лінія 2: на 28px вище нижнього краю (14px * 2), товщина 2px */
+.services__line--2 {
+    clip-path: polygon(
+        0 calc(100% - min(10vw, 140px) - 28px),
+        100% calc(100% - 28px),
+        100% calc(100% - 26px),
+        0 calc(100% - min(10vw, 140px) - 26px)
+    );
+}
+
+/* вміст */
+
+.container services{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+
+
+
+
+
 
 
 
