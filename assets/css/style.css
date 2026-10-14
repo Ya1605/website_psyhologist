@@ -409,6 +409,18 @@ list-style: none;
     align-items: flex-start;
 }
 
+.services__title{
+    margin: 0 0 40px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.services__mark {
+    padding: 0 8px;
+    background: #ffd98a;
+    color: #fff;
+}
+
 
 
 
