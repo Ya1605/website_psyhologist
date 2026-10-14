@@ -356,11 +356,11 @@ list-style: none;
 
 .services{
     position: relative;
-    padding: 140px 0 calc(min(10vw, 140px)+ 90px);   /* зверху 140px, знизу: нахил (min(10vw, 140px)) + 90px під лінії */
+    padding: 140px 0 calc(min(10vw, 140px) + 90px);   /* зверху 140px, знизу: нахил (min(10vw, 140px)) + 90px під лінії */
     isolation: isolate;
 }
 
-.services ::before{
+.services::before{
     content: "";
     position: absolute;
     inset: 0;
@@ -370,7 +370,7 @@ list-style: none;
         0 0,
         100% min(10vw, 140px),
         100% 100%,
-        0 calc (100% - min(10vw,140px))
+        0 calc(100% - min(10vw,140px))
     );
 }
 
