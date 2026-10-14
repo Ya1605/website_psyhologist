@@ -351,6 +351,49 @@ list-style: none;
     line-height: 1.6;
 
 }
+
+/* ---------- SERVICES ---------- */
+
+.services{
+    position: relative;
+    padding: 140px 0 calc(min(10vw, 140px)+ 90px);   /* зверху 140px, знизу: нахил (min(10vw, 140px)) + 90px під лінії */
+    isolation: isolate;
+}
+
+.services ::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    background:#92c8db;
+    clip-path: polygon(
+        0 0,
+        100% min(10vw, 140px),
+        100% 100%,
+        0 calc (100% - min(10vw,140px))
+    );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 700px) {
     .card,
     .card:nth-child(even) {
