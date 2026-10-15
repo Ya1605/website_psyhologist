@@ -392,10 +392,10 @@ list-style: none;
 /* лінія 1: на 14px вище нижнього краю, товщина 2px */
 .services__line--1 {
     clip-path: polygon(
-        0 calc(100% - min(10vw, 140px) - 14px),
-        100% calc(100% - 14px),
-        100% calc(100% - 12px),
-        0 calc(100% - min(10vw, 140px) - 12px)
+        0 calc(100% - min(10vw, 140px) - 20px),
+        100% calc(100% - 20px),
+        100% calc(100% - 22px),
+        0 calc(100% - min(10vw, 140px) - 22px)
     );
     
 }
