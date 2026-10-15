@@ -8,7 +8,7 @@
             <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/img services section.webp'); ?>"
                 alt="Ілона Яковлева, психолог">
         </div>
-        <h2 class="services__title">Я допоможу<span class="servces__mark">вам</span></h2>
+        <h2 class="services__title">Я допоможу<span class="services__mark">вам</span></h2>
         <ul class="services__list">
             <li>Пережити стан<br>гострого стресу (війна, втрата домівки, роботи або близьких);</li>
             <li>Адаптуватися у нових<br>умовах життя (війна, внутрішнє переміщення, еміграція тощо);</li>

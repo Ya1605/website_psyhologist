@@ -438,14 +438,14 @@ services__list{
     margin: 0 0 40px;
     padding: 0 0 0 32px;
     list-style: none;
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 24px;
+    font-weight: bold;
     line-height: 1.6;
 }
 
 .services__list li{
     padding: 14px 0;
-    border-bottom: 1px solid #ffd98a;
+    border-bottom: 3px solid #ffd98a;
 }
 
 services__list li:last-child{
