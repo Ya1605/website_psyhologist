@@ -433,7 +433,7 @@ list-style: none;
     color: #fff;
 }
 
-services__list{
+.services__list{
     max-width: 520px;
     margin: 0 0 40px;
     padding: 0 0 0 32px;
