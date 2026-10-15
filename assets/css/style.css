@@ -397,19 +397,20 @@ list-style: none;
         100% calc(100% - 12px),
         0 calc(100% - min(10vw, 140px) - 12px)
     );
-    margin: 10px;
+    
 }
 
 /* лінія 2: на 28px вище нижнього краю (14px * 2), товщина 2px */
 .services__line--2 {
     clip-path: polygon(
-        0 calc(100% - min(10vw, 140px) - 28px),
-        100% calc(100% - 28px),
-        100% calc(100% - 26px),
-        0 calc(100% - min(10vw, 140px) - 26px)
+        0 calc(100% - min(10vw, 140px) - 54px),
+        100% calc(100% - 54px),
+        100% calc(100% - 52px),
+        0 calc(100% - min(10vw, 140px) - 52px)
     );
-    margin: 30px;
 }
+    
+
 
 /* вміст */
 
