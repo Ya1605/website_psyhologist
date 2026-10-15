@@ -451,7 +451,7 @@ services__list li:last-child{
     border-bottom: 0;
 }
 
-.services__badge{
+.services__right_badge{
     align-items: flex-end;
     margin: 0;
     padding: 8px 14px;
