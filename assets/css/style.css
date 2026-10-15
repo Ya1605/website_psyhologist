@@ -452,7 +452,7 @@ services__list li:last-child{
 }
 
 .services__right_badge{
-    align-items: flex-end;
+    align-self: flex-end;
     margin: 0;
     padding: 8px 14px;
     background: #ffd98a;
