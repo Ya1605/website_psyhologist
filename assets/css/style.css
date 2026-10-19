@@ -431,6 +431,8 @@ list-style: none;
     padding: 0 8px;
     background: #ffd98a;
     color: #fff;
+    -webkit-text-stroke: 2px #000;
+    paint-order: stroke fill;
 }
 
 .services__list{
