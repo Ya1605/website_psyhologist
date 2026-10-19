@@ -448,7 +448,7 @@ list-style: none;
     border-bottom: 3px solid #ffd98a;
 }
 
-services__list li:last-child{
+.services__list li:last-child{
     border-bottom: 0;
 }
 
