@@ -434,7 +434,7 @@ list-style: none;
 }
 
 .services__list{
-    max-width: 520px;
+    max-width: 720px;
     margin: 0 0 40px;
     padding: 0 0 0 32px;
     list-style: none;
@@ -458,8 +458,9 @@ list-style: none;
     padding: 8px 14px;
     background: #ffd98a;
     color: #000000;
-    font-size: 14px;
-    font-weight: 700;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 30px;
 
 }
 
