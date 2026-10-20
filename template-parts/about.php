@@ -18,7 +18,7 @@
                     </svg>
                 </span>
                 <span class="stat__number">11000+</span>
-                <span class="stat__title">Особистих консультацій</span>
+                <span class="stat__text">Особистих консультацій</span>
             </li>
             <li class="stat">
                 <span class="stat__icon">
