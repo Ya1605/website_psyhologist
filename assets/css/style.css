@@ -492,7 +492,7 @@ list-style: none;
 
 }
 
-.bout__stats{
+.about__stats{
     display: flex;
     list-style: none;
     gap: 20px;
