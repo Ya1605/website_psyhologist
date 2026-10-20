@@ -512,6 +512,30 @@ list-style: none;
     background: linear-gradient(135deg, #ffc878, #ffe3b8);;
 }
 
+.stat__icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    width: 56px;
+    height: 56px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+.stat__number{
+    margin-bottom: 8px;
+    color: #000;
+    font-size:38px;
+    font-weight: bold;
+}
+
+.stat__text{
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+
+}
 
 
 
@@ -535,8 +559,15 @@ list-style: none;
 
 
 
+@media (max-width: 900px) {
+    .about__stats {
+        flex-wrap: wrap;
+    }
 
-
+    .stat {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
 
 @media (max-width: 700px) {
     .card,
