@@ -18,7 +18,7 @@
                     </svg>
                 </span>
                 <span class="stat__number">11000+</span>
-                <span class="stat__text">Особистих консультацій</span>
+                <span class="stat__text">Особистих<br> консультацій</span>
             </li>
             <li class="stat">
                 <span class="stat__icon">
@@ -27,7 +27,7 @@
                     </svg>
                 </span>
                 <span class="stat__number">5000+</span>
-                <span class="stat__text">Консультацій з парами</span>
+                <span class="stat__text">Консультацій<br> з парами</span>
             </li>
             <li class="stat"> <span class="stat__icon"><svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                         <path d="M4 12l5 5L20 6" />
