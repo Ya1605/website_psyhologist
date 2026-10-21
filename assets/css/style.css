@@ -510,6 +510,8 @@ list-style: none;
     border-radius: 16px;
     text-align: center;
     background: linear-gradient(135deg, #ffc878, #ffe3b8);;
+    height:390px;
+    width: 310px;
 }
 
 .stat__icon{
@@ -517,8 +519,8 @@ list-style: none;
     align-items: center;
     justify-content: center;
     background: white;
-    width: 56px;
-    height: 56px;
+    width: 132px;
+    height: 132px;
     margin-bottom: 20px;
     border-radius: 50%;
 }
