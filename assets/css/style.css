@@ -527,12 +527,14 @@ list-style: none;
 
 .stat__number{
     margin-bottom: 8px;
+    margin-top: 40px;
     color: #000;
     font-size:38px;
     font-weight: bold;
 }
 
 .stat__text{
+    margin-top: 40px;
     color: #000;
     font-size: 24px;
     font-weight: bold;
