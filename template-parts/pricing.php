@@ -10,12 +10,28 @@
         </div>
         <h2 class="pricing__title">Веду прийом <span class="pricing__mark">за записом</span></h2>
         <ul class="pricing__list">
-            <ul class="pricing__list">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+
+            <li class="price">
+                <h3 class="price__name">Діти та підлітки</h3>
+                <p class="price__value">500грн</p>
+                <button type="button" class="price__btn" data-scroll="#contact">Записатись</button>
+            </li>
+            <li class="price">
+                <h3 class="price__name">Приватна консультація</h3>
+                <p class="price__value">600грн</p>
+                <button type="button" class="price__btn" data-scroll="#contact">Записатись</button>
+            </li>
+            <li class="price">
+                <h3 class="price__name">Сімейна консультація</h3>
+                <p class="price__value">700грн</p>
+                <button type="button" class="price__btn" data-scroll="#contact">Записатись</button>
+            </li>
+            <li class="price">
+                <h3 class="price__name">Висновок для суду</h3>
+                <p class="price__value">800грн</p>
+                <button type="button" class="price__btn" data-scroll="#contact">Записатись</button>
+            </li>
+
 
         </ul>
     </div>
