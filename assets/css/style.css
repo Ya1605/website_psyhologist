@@ -541,6 +541,37 @@ list-style: none;
 
 }
 
+/* ---------- PRICING ---------- */
+
+.pricing{
+    position: relative;
+    isolation: isolate;
+    margin-top: 100px;
+    padding: 160px;
+
+}
+
+.pricing::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    background: #92c8db;
+    clip-path: polygon(
+        0 min (18vw, 232px),
+        100% 0,
+        100% calc(100% - min(18vw, 232px)),
+        0 100%
+    );
+}
+
+
+
+
+
+
+
+
 
 
 
