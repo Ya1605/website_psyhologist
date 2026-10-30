@@ -565,6 +565,51 @@ list-style: none;
     );
 }
 
+.pricing__lines{
+    position: absolute;
+    inset: 0;
+    background: #6f9aab;
+}
+
+.pricing__line--1{
+    clip-path: polygon(
+        0 calc(100% - 22px),
+        100% calc(100% - min(18vw, 232px) - 22px),
+        100% calc(100% - min(18vw, 232px) - 20px),
+        0 calc(100% - 20px)
+    );
+}
+
+.pricing__line--2{
+    clip-path: polygon(
+        0 calc(100% - 22px),
+        100% calc(100% - min(18vw, 232px) - 22px),
+        100% calc(100% - min(18vw, 232px) - 20px),
+        0 calc(100% - 20px)
+    );
+}
+
+.pricing--inner{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.pricing__title{
+    margin: 0 0 60px;
+    font-size: 38px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.pricing__mark{
+    padding: 0 8px;
+    background: #ffd98a;
+    color: #060404;
+}
+
+/* картки */
 
 
 
