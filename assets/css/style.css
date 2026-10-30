@@ -558,7 +558,7 @@ list-style: none;
     z-index: -2;
     background: #92c8db;
     clip-path: polygon(
-        0 min (18vw, 232px),
+        0 min(18vw, 232px),
         100% 0,
         100% calc(100% - min(18vw, 232px)),
         0 100%
@@ -583,13 +583,13 @@ list-style: none;
 .pricing__line--2{
     clip-path: polygon(
         0 calc(100% - 22px),
-        100% calc(100% - min(18vw, 232px) - 22px),
-        100% calc(100% - min(18vw, 232px) - 20px),
+        100% calc(100% - min(18vw, 232px) - 54px),
+        100% calc(100% - min(18vw, 232px) - 52px),
         0 calc(100% - 20px)
     );
 }
 
-.pricing--inner{
+.pricing__inner{
     position: relative;
     display: flex;
     flex-direction: column;
@@ -634,7 +634,7 @@ list-style: none;
 
 .price:nth-child(1){margin-top: 120px;}
 .price:nth-child(2){margin-top: 80px;}
-.price:nth-child(3){margin-top: 4px;}
+.price:nth-child(3){margin-top: 40px;}
 .price:nth-child(4){margin-top: 0;}
 
 
