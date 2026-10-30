@@ -547,7 +547,7 @@ list-style: none;
     position: relative;
     isolation: isolate;
     margin-top: 100px;
-    padding: 160px;
+    padding: 160px 0 calc(min(18vw, 232px) + 90px);
 
 }
 
@@ -564,8 +564,15 @@ list-style: none;
         0 100%
     );
 }
-
 .pricing__lines{
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.25));
+}
+
+.pricing__line{
     position: absolute;
     inset: 0;
     background: #6f9aab;
@@ -582,10 +589,10 @@ list-style: none;
 
 .pricing__line--2{
     clip-path: polygon(
-        0 calc(100% - 22px),
+        0 calc(100% - 54px),
         100% calc(100% - min(18vw, 232px) - 54px),
         100% calc(100% - min(18vw, 232px) - 52px),
-        0 calc(100% - 20px)
+        0 calc(100% - 52px)
     );
 }
 
