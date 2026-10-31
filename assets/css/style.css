@@ -604,7 +604,8 @@ list-style: none;
 }
 
 .pricing__title{
-    margin: 0 0 60px;
+    padding: 50px;
+    margin: 0 0 100px;
     font-size: 38px;
     font-weight: 400;
     text-transform: uppercase;
@@ -618,7 +619,7 @@ list-style: none;
 
 .pricing__photo{
     position: absolute;
-    top: -80px;
+    top: -160px;
     left: 0;
     width: 340px;
     aspect-ratio: 1/1;
@@ -641,11 +642,12 @@ list-style: none;
 }
 
 .price{
+    height: 200px;
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 28px 16px;
+    padding: 60px 16px;
     border-radius: 18px;
     background: linear-gradient(180deg, #ffc878, #ffe3b8);
     text-align: center;
