@@ -639,12 +639,13 @@ list-style: none;
 }
 
 .price{
-    height: 200px;
+    height:390px;
+    width: 310px;
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 60px 16px;
+    padding: 60px 20px;
     border-radius: 18px;
     background: linear-gradient(180deg, #ffc878, #ffe3b8);
     text-align: center;
