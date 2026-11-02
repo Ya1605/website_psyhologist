@@ -661,16 +661,16 @@ list-style: none;
 .price__name{
     margin: 0 0 32px;
     color: #000;
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 24px;
+    font-weight: bold;
     text-transform: uppercase;
 }
 
 .price__value{
-    margin: 0 0 24px;
-    color: #6b6b6b;
-    font-size: 28px;
-    font-weight: 700;
+    margin: 68px 0 24px;
+    color: #515151;
+    font-size: 38px;
+    font-weight: bold;
 }
 
 .price__btn{
@@ -683,6 +683,8 @@ list-style: none;
     font-size: 14px;
     font-weight: 700;
     cursor: pointer;
+    height: 51px;
+    width: 197px;
 }
 
 

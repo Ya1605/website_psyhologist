@@ -17,17 +17,17 @@
                 <button type="button" class="price__btn" data-scroll="#contact">Записатись</button>
             </li>
             <li class="price">
-                <h3 class="price__name">Приватна консультація</h3>
+                <h3 class="price__name">Приватна<br> консультація</h3>
                 <p class="price__value">600грн</p>
                 <button type="button" class="price__btn" data-scroll="#contact">Записатись</button>
             </li>
             <li class="price">
-                <h3 class="price__name">Сімейна консультація</h3>
+                <h3 class="price__name">Сімейна <br>консультація</h3>
                 <p class="price__value">700грн</p>
                 <button type="button" class="price__btn" data-scroll="#contact">Записатись</button>
             </li>
             <li class="price">
-                <h3 class="price__name">Висновок для суду</h3>
+                <h3 class="price__name">Висновок<br> для суду</h3>
                 <p class="price__value">800грн</p>
                 <button type="button" class="price__btn" data-scroll="#contact">Записатись</button>
             </li>
