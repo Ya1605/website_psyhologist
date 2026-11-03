@@ -666,8 +666,8 @@ list-style: none;
     line-height: 1.6;
     text-transform: uppercase;
 }
-.price__name:nth-child(1){
-    margin-top: 20px;
+.price:nth-child(1) .price__name{
+    margin-top: 40px;
 }
 
 .price__value{
