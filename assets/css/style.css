@@ -703,12 +703,42 @@ list-style: none;
 
 .reviews__title{
     margin: 0 0 56px;
-    align-content: center;
+    text-align: center;
     text-transform: uppercase;
     font-size: 28px;
     line-height: 1.6;
 }
 
+.review__slider{
+    position: relative;
+    max-width: 1080px;
+    height: 410px;
+    margin: 0 auto;
+}
+
+.reviews__track{
+    border: 1px solid #ffd98a;
+    border-radius: 30px;
+}
+
+/* усі відгуки сховані, видно тільки активний */
+
+.review{
+    display: none;
+    padding: 40px 32px 32px;
+}
+
+.review.is-active{
+    display: block;
+}
+.review__text{
+    margin: 0 0 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #ffd98a;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.8;
+}
 
 
 
