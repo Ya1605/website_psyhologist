@@ -671,7 +671,7 @@ list-style: none;
 }
 
 .price__value{
-    margin: 68px 0 24px;
+    margin: 88px 0 24px;
     color: #515151;
     font-size: 38px;
     font-weight: bold;
@@ -684,7 +684,7 @@ list-style: none;
     background:#fff2df;
     color: #000;
     font: inherit;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 700;
     cursor: pointer;
     height: 51px;
