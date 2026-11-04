@@ -762,7 +762,7 @@ list-style: none;
     cursor: pointer;
 }
 
-.review__arrow--prev{left:-30px;}
+.reviews__arrow--prev{left:-30px;}
 .reviews__arrow--next{right: -30px;}
 
 
