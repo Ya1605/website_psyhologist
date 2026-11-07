@@ -750,10 +750,10 @@ list-style: none;
 
 .reviews__arrow{
     position: absolute;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
-    width:95px;
-    height: 95px;
+    width:75px;
+    height: 75px;
     border: 0;
     border-radius: 50%;
     background: #ffd98a;
@@ -762,8 +762,8 @@ list-style: none;
     cursor: pointer;
 }
 
-.reviews__arrow--prev{left:-47px;}
-.reviews__arrow--next{right: -47px;}
+.reviews__arrow--prev{left:-58px;}
+.reviews__arrow--next{right: -58px;}
 
 
 
