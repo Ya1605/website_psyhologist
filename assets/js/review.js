@@ -2,9 +2,9 @@
     const slider = document.querySelector('.reviews__slider');
     if (!slider) return;
 
-    const slides = slider.querySelectorAll('review');
+    const slides = slider.querySelectorAll('.review');
     const prev = slider.querySelector('.reviews__arrow--prev');
-    const next = slider.querySelector('reviews__arrow--next');
+    const next = slider.querySelector('.reviews__arrow--next');
     let current = 0;
 
     function show(index) {
@@ -14,5 +14,5 @@
     }
     
     prev.addEventListener('click', () => show(current - 1));
-    next.addEventListener('click', () => show (current + 1));
-})
+    next.addEventListener('click', () => show(current + 1));
+})();
