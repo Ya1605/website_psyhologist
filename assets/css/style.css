@@ -694,10 +694,77 @@ list-style: none;
 
 
 
+/*------------REVIEW------------*/
 
 
+.reviews{
+    padding: 80px 0;
+}
 
+.reviews__title{
+    margin: 0 0 56px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 28px;
+    line-height: 1.6;
+}
 
+.reviews__slider{
+    position: relative;
+    max-width: 1080px;
+    height: 410px;
+    margin: 0 auto;
+}
+
+.reviews__track{
+    border: 1px solid #ffd98a;
+    border-radius: 30px;
+}
+
+/* усі відгуки сховані, видно тільки активний */
+
+.review{
+    display: none;
+    padding: 40px 32px 32px;
+}
+
+.review.is-active{
+    display: block;
+}
+.review__text{
+    margin: 0 0 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #ffd98a;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.8;
+}
+
+.review__author{
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* стрілки: круглі, по боках картки, посередині по висоті */
+
+.reviews__arrow{
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    width:75px;
+    height: 75px;
+    border: 0;
+    border-radius: 50%;
+    background: #ffd98a;
+    color: #000;
+    font-size: 29px;
+    cursor: pointer;
+}
+
+.reviews__arrow--prev{left:-58px;}
+.reviews__arrow--next{right: -58px;}
 
 
 
