@@ -768,7 +768,29 @@ list-style: none;
 
 
 
+/* ---------- FOOTER ---------- */
 
+.footer{
+    position: relative;
+    isolation: isolate;
+    margin-top: 80px;
+    padding: calc(min(6vw, 100px) + 110px) 0 80px;
+}
+
+/* блакитний фон: верхній край опускається зліва направо */
+.footer::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    background:#92c8db;
+    clip-path:polygon(
+        0 0,
+        100% min(6vw, 100px),
+        100% 100%,
+        0 100%
+    );
+}
 
 
 
