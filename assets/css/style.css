@@ -791,7 +791,24 @@ list-style: none;
         0 100%
     );
 }
-
+/* лінія 1: на 30px нижче верхнього краю, товщина 2px */
+.footer__line--1{
+    clip-path: polygon(
+        0 30px,
+        100% calc(min(6vw, 100px) + 30px),
+        100% calc(min(6vw, 100px) + 32px),
+        0 32px
+    );
+}
+/* лінія 2: на 60px нижче верхнього краю, товщина 2px */
+.footer__line--2{
+    clip-path: (
+        0 60px,
+        100% calc(min(6vw, 100px) + 60px),
+        100% calc(min(6vw, 100px) + 62px),
+        0 62px
+    );
+}
 
 
 
