@@ -811,10 +811,88 @@ list-style: none;
 }
 
 
+.footer__inner{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer__brand {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer__brand .custom-logo{
+    display: block;
+    max-height: 80px;
+    width: auto;
+}
+
+.footer__person{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.footer__name{
+    font-size:28px ;
+    font-weight: bold;
+}
+
+.footer__role{
+    font-size: 18px;
+   
+}
+
+.footer__contact{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 24px;
+}
+
+.footer__btn{
+    display: inline-block;
+    padding: 18px 48px;
+    border-radius: 18px;
+    background: #ffc878;
+    color: #000;
+    font-size:28px ;
+    text-decoration: none;
+    box-shadow:0 4px 0 #ffe3b8 ;
+}
+
+.footer__phone{
+    color: #000;
+    font-size: 21px;
+    font-weight: bold;
+    text-decoration: none;
+    white-space: nowrap;
+}
 
 
 
 
+
+
+/*footer*/
+@media (max-width: 700px) {
+    .footer__inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer__brand {
+        flex-direction: column;
+    }
+
+    .footer__contact {
+        align-items: center;
+    }
+}
 
 
 

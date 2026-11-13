@@ -5,11 +5,11 @@
         <span class="footer__line footer__line--2"></span>
     </div>
 
-    <div class="container footer__left">
-        <div class="footer__logo">
+    <div class="container footer__inner">
+        <div class="footer__brand">
             <?php the_custom_logo() ?>
         </div>
-        <div class="footer__description">
+        <div class="footer__person">
             <span class="footer__name">Ілона Яковлєва</span>
             <span class="footer__role">Психолог</span>
         </div>
