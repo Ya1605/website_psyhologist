@@ -858,6 +858,7 @@ list-style: none;
     flex-direction: column;
     align-items: flex-end;
     gap: 24px;
+    margin-right: 80px;
 }
 
 .footer__btn{
