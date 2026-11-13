@@ -18,7 +18,7 @@
 
         <div class="footer__contact">
             <a href="#" class="footer__btn">Записатись</a>
-            <a href="tel:+380505773119" class="footer__phone">+38 050 577 31 19</a>
+
         </div>
     </div>
 </footer>
