@@ -823,6 +823,7 @@ list-style: none;
     display: flex;
     align-items: flex-start;
     gap: 40px;
+    margin: 20px 0 0 0;
 }
 
 .footer__brand {
@@ -831,6 +832,11 @@ list-style: none;
     gap: 20px;
 }
 
+.main__container__footer{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1600px;
+}
 .footer__brand .custom-logo{
     display: block;
     max-height: 80px;
@@ -858,7 +864,7 @@ list-style: none;
     flex-direction: column;
     align-items: flex-end;
     gap: 24px;
-    margin-right: 80px;
+    margin-right: 100px;
 }
 
 .footer__btn{
