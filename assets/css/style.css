@@ -784,7 +784,7 @@ list-style: none;
     pointer-events: none;
     filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.25));
 }
-.footer_line{
+.footer__line{
     position: absolute;
     inset: 0;
     background: #6f9aab;
@@ -815,7 +815,7 @@ list-style: none;
 }
 /* лінія 2: на 60px нижче верхнього краю, товщина 2px */
 .footer__line--2{
-    clip-path: (
+    clip-path: polygon(
         0 60px,
         100% calc(min(6vw, 100px) + 60px),
         100% calc(min(6vw, 100px) + 62px),
