@@ -768,6 +768,120 @@ list-style: none;
 
 
 
+/* ---------- FOOTER ---------- */
+
+.footer{
+    position: relative;
+    isolation: isolate;
+    margin-top: 80px;
+    padding: calc(min(6vw, 100px) + 110px) 0 80px;
+}
+
+.footer__lines {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.25));
+}
+.footer__line{
+    position: absolute;
+    inset: 0;
+    background: #6f9aab;
+}
+
+/* блакитний фон: верхній край опускається зліва направо */
+.footer::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    background:#92c8db;
+    clip-path:polygon(
+        0 0,
+        100% min(6vw, 100px),
+        100% 100%,
+        0 100%
+    );
+}
+/* лінія 1: на 30px нижче верхнього краю, товщина 2px */
+.footer__line--1{
+    clip-path: polygon(
+        0 30px,
+        100% calc(min(6vw, 100px) + 30px),
+        100% calc(min(6vw, 100px) + 32px),
+        0 32px
+    );
+}
+/* лінія 2: на 60px нижче верхнього краю, товщина 2px */
+.footer__line--2{
+    clip-path: polygon(
+        0 60px,
+        100% calc(min(6vw, 100px) + 60px),
+        100% calc(min(6vw, 100px) + 62px),
+        0 62px
+    );
+}
+
+
+.footer__inner{
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 20px 0 0 0;
+}
+
+.footer__brand {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.main__container__footer{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1600px;
+}
+.footer__brand .custom-logo{
+    display: block;
+    max-height: 80px;
+    width: auto;
+}
+
+.footer__person{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.footer__name{
+    font-size:28px ;
+    font-weight: bold;
+}
+
+.footer__role{
+    font-size: 18px;
+   
+}
+
+.footer__contact{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 24px;
+    margin-right: 100px;
+}
+
+.footer__btn{
+    display: inline-block;
+    padding: 18px 48px;
+    border-radius: 18px;
+    background: #ffc878;
+    color: #000;
+    font-size:28px ;
+    text-decoration: none;
+    box-shadow:0 4px 0 #ffe3b8 ;
+}
 
 
 
@@ -775,7 +889,22 @@ list-style: none;
 
 
 
+/*footer*/
+@media (max-width: 700px) {
+    .footer__inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
+    .footer__brand {
+        flex-direction: column;
+    }
+
+    .footer__contact {
+        align-items: center;
+    }
+}
 
 
 
